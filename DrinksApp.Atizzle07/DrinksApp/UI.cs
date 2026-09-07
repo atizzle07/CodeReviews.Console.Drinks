@@ -17,7 +17,7 @@ public class UI
     {
         Rule rule = new();
         rule.Border = BoxBorder.Heavy;
-        var figlet = new FigletText("DRINKS LOOKUP")
+        var figlet = new FigletText("DRINK RECIPES")
         {
             Justification = Justify.Center,
             Color = Color.White,

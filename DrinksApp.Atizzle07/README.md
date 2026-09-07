@@ -1,26 +1,17 @@
-﻿# Drinks Menu Application
+﻿# Drinks Menu Console Application - Atizzle07
 
-## Website location: [https://www.thecocktaildb.com/api.php]()
+This is a console based API viewer based on the [cocktails database](www.thecocktaildb.com/api.php). 
 
-Requirements:
+### Tools learned in this project:
 
-- You were hired by restaurant to create a solution for their drinks menu.
+- HTTP requests and utilizting DTO's to transform the responses into C# objects
+- Cascading console menu calls with forward and backward navigation
+- Spectre Console library for showing a more polizhed and user friendly console experience
+- Utilizing multiple "Projects" inside a single solution to separate concerns
 
+### Features:
 
-- Their drinks menu is provided by an external company. All the data about the drinks is in the companies database, accessible through an API.
-
-
-- Your job is to create a system that allows the restaurant employee to pull data from any drink in the database.
-
-
-- You don't need SQL here, as you won't be operating the database. All you need is to create an user-friendly way to present the data to the users (the restaurant employees)
-
-
-- When the users open the application, they should be presented with the Drinks Category Menu and invited to choose a category. Then they'll have the chance to choose a drink and see information about it.
-
-
-- When the users visualise the drink detail, there shouldn't be any properties with empty values.
-
-
-- You should handle errors so that if the API is down, the application doesn't crash.
+- Splash Screen
+	- This is the entry point for the application and prompts the user to begin
+	- Utilizes the Spectre console Figlet for a nice title bar
 
