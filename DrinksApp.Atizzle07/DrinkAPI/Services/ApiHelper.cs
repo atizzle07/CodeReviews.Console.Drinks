@@ -2,7 +2,6 @@
 using DrinksAPI.Services;
 using DrinksApp.Models;
 using Newtonsoft.Json;
-using System.Runtime.CompilerServices;
 
 namespace DrinksApp.Services;
 
@@ -40,7 +39,7 @@ public static class ApiHelper
         }
     }
 
-    public static async Task<List<KeyValuePair<int,string>>> GetDrinksList(string category)
+    public static async Task<List<KeyValuePair<int, string>>> GetDrinksList(string category)
     {
         using HttpResponseMessage response = await ApiClient!.GetAsync($"filter.php?c={category}");
 
@@ -74,6 +73,7 @@ public static class ApiHelper
             RecipeDTO? recipeDTO = apiResponse?.Drinks?.FirstOrDefault(); //Takes the api response and pulls the list into a DTO object
 
             RecipeResponse recipeResponse = ResponseMapper.ReturnRecipeData(recipeDTO!); // map recipeDTO to recipe object
+            recipeResponse.InstructionsText = Formatter.InstructionsFormat(recipeResponse.InstructionsText);
             return recipeResponse;
         }
         else

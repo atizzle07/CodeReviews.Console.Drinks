@@ -19,12 +19,15 @@ while (true)
         drinkChoiceId = await UI.GetDrinkChoice(categoryChoice);
         if (drinkChoiceId == "Back")
             break;
-        while (true)
-        {
-            // step 3 - select and display the selected recipe
-            recipeChoice = await UI.DisplayRecipeTable(drinkChoiceId);
-            // TODO - add nav functions after recipe is displayed
-            Console.ReadKey();
-        }
+
+        // step 3 - select and display the selected recipe
+        recipeChoice = await UI.DisplayRecipeTable(drinkChoiceId);
+
+        if (recipeChoice == "Drinks")
+            continue;
+        if (recipeChoice == "Categories")
+            break;
+        if (recipeChoice == "Exit")
+            return;
     }
 }
