@@ -26,22 +26,28 @@ After the user selects a category, the selection is passed back to the API to ge
 
 
 #### Recipe View
-When a drink is selected the recipe ID is passed to the API and the JSON response mapped to a DTO, then to a RecipeResponse object. This is then filtered and formatted into table and text responses shown below (again using Spectre).
+- When a drink is selected the recipe ID is passed to the API and the JSON response mapped to a DTO, then to a RecipeResponse object. This is then filtered and formatted into table and text responses shown below (again using Spectre).
+- To provide a seamless app experience, the user is then prompted with 3 options: Exit, select a new category, or select a new drink from the same category. This takes them back through the same menus shown before in a loop.
 
 <img width="818" height="881" alt="image" src="https://github.com/user-attachments/assets/b294a70c-3923-4777-b6e3-29c27f328099" />
 
 ## Lessons learned
 ----
-- HTTP requests and utilizting DTO's to transform the responses into C# objects
+- HTTP requests and utilizting DTO's to transform the responses into C# objects with Newtonsoft 
 - Cascading console menu calls with forward and backward navigation
 - Spectre Console library for showing a more polizhed and user friendly console experience
 - Utilizing multiple "Projects" inside a single solution to separate concerns
 - Newtonsoft for JSON deserialization
+- Utilizing Postman to map out API calls
 
 ## Challenges
 ----
-- Working with DTO's and nested JSON response objects took a little bit of fiddling to get right. I initially didn't realize that the recipe for a single drink came back under a drink object so I spent a lot of time wondering why my JSON response was not deserializing properly. Definitely a 'DUH' moment!
+- Working with DTO's and nested JSON response objects took a little bit of fiddling to get right. I initially didn't notice that the recipe for a single drink came back under a drink object, not just the recipe, so I spent a lot of time wondering why my JSON response was not deserializing properly. Definitely a 'DUH' moment!
 - This was one of the longest applications I have made so far. I did code the first 2/3 of the project a few months ago and picked it up recently to finish in a weekend. This isn't the best method because I had to relearn everything but I also think that in itself was a good opportunity to learn an unfamiliar codebase (even though it was me that wrote it). I always struggled with this concept so that was a giant fringe benefit.
 
 ## Resources Used
 ----
+- Spectre Console Library documentation
+- Google search, including the "AI Mode"
+- Microsoft Learn articles
+- ChatGPT (I did not use Codex to write code for me, this was entirely hand-typed. I mainly used this resource to help with a few design decisions and some bugs that I could not figure out)
