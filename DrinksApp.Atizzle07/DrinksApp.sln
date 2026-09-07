@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.1.11312.151
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrinksApp", "DrinksApp\DrinksApp.csproj", "{9951DEE4-8A01-100E-DD79-6001DDF4C57F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrinksAPI", "DrinkAPI\DrinksAPI.csproj", "{BD94543A-B3A0-2E4D-C6B2-027E8C4EC9DE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9951DEE4-8A01-100E-DD79-6001DDF4C57F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9951DEE4-8A01-100E-DD79-6001DDF4C57F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9951DEE4-8A01-100E-DD79-6001DDF4C57F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9951DEE4-8A01-100E-DD79-6001DDF4C57F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD94543A-B3A0-2E4D-C6B2-027E8C4EC9DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD94543A-B3A0-2E4D-C6B2-027E8C4EC9DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD94543A-B3A0-2E4D-C6B2-027E8C4EC9DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD94543A-B3A0-2E4D-C6B2-027E8C4EC9DE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DD3C30DA-99F8-481B-AF92-D25BC1F6D7CE}
+	EndGlobalSection
+EndGlobal
