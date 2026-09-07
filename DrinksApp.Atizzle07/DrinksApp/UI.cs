@@ -63,7 +63,7 @@ public class UI
                 .AddChoices(drinksMenu)
                 .EnableSearch()
                 .SearchPlaceholderText("Type to search...")
-                .PageSize(15));
+                .PageSize(20));
 
         // Select and return Menu Item ID based on the user's input
         if (userInput.ToLower() != "back")
