@@ -2,7 +2,7 @@
 
 namespace DrinksAPI.Models;
 
-public  class DrinkResponse
+public class DrinkResponse
 {
     [JsonProperty("drinks")]
     public List<DrinkItem> Drinks { get; set; } = new();

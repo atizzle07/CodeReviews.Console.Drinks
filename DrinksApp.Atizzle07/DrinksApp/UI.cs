@@ -1,7 +1,6 @@
 ﻿using DrinksAPI.Models;
 using DrinksApp.Services;
 using Spectre.Console;
-using Spectre.Console.Rendering;
 using System.Reflection;
 
 public class UI
@@ -43,7 +42,7 @@ public class UI
         DrawTitle();
         var userInput = AnsiConsole.Prompt(
             new SelectionPrompt<string>()
-            .Title("Please select a menu Option:")
+            .Title("Please select a Category:")
             .AddChoices(categoryMenu));
         return userInput;
     }
@@ -112,7 +111,7 @@ public class UI
                     ingredientsTable.AddRow(
                         item.Ingredient ?? "",
                         item.Measurement ?? "");
-            } 
+            }
         }
         AnsiConsole.MarkupLine("[bold orange3]Drink Information[/]");
         AnsiConsole.Write(table);

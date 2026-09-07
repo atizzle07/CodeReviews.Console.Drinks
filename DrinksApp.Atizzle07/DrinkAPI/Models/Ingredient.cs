@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace DrinksAPI.Models;
+﻿namespace DrinksAPI.Models;
 
 public class Ingredient
 {

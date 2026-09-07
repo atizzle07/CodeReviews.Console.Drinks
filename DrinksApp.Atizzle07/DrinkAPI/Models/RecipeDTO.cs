@@ -1,5 +1,4 @@
 ﻿using Newtonsoft.Json;
-using System.Diagnostics.Metrics;
 
 namespace DrinksAPI.Models;
 
